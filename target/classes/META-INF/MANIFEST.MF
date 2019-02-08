@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: surprise.com
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: BASHU
+Implementation-Vendor-Id: com.hack.surprise.main
+Build-Jdk: 1.8.0_77
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/surprise.com
+Created-By: Maven Integration for Eclipse
+
