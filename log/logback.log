@@ -5477,3 +5477,27 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2019-02-09 03:43:00.501 DEBUG 12924 --- [http-nio-9092-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
 2019-02-09 03:43:00.502 DEBUG 12924 --- [http-nio-9092-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
 2019-02-09 03:43:00.541 DEBUG 12924 --- [http-nio-9092-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-02-09 04:02:01.083 DEBUG 12924 --- [http-nio-9092-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2019-02-09 04:02:01.087 DEBUG 12924 --- [http-nio-9092-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String org.hack.surprise.com.main.controller.App.index()
+2019-02-09 04:02:01.091 DEBUG 12924 --- [http-nio-9092-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2019-02-09 04:02:01.091 DEBUG 12924 --- [http-nio-9092-exec-9] o.s.w.servlet.view.InternalResourceView  : View name 'index.html', model {}
+2019-02-09 04:02:01.092 DEBUG 12924 --- [http-nio-9092-exec-9] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2019-02-09 04:02:01.093 DEBUG 12924 --- [http-nio-9092-exec-9] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2019-02-09 04:02:01.098 DEBUG 12924 --- [http-nio-9092-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-02-09 04:02:01.109 DEBUG 12924 --- [http-nio-9092-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2019-02-09 04:02:01.110 DEBUG 12924 --- [http-nio-9092-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-02-09 04:02:01.161 DEBUG 12924 --- [http-nio-9092-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/bootstrap.css", parameters={}
+2019-02-09 04:02:01.164 DEBUG 12924 --- [http-nio-9092-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-02-09 04:02:01.166 DEBUG 12924 --- [http-nio-9092-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2019-02-09 04:02:01.174 DEBUG 12924 --- [http-nio-9092-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/js/angularjs.js", parameters={}
+2019-02-09 04:02:01.177 DEBUG 12924 --- [http-nio-9092-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-02-09 04:02:01.177 DEBUG 12924 --- [http-nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/app/home/homeDir.js", parameters={}
+2019-02-09 04:02:01.200 DEBUG 12924 --- [http-nio-9092-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/app.js", parameters={}
+2019-02-09 04:02:01.203 DEBUG 12924 --- [http-nio-9092-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-02-09 04:02:01.208 DEBUG 12924 --- [http-nio-9092-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2019-02-09 04:02:01.210 DEBUG 12924 --- [http-nio-9092-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2019-02-09 04:02:01.214 DEBUG 12924 --- [http-nio-9092-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-02-09 04:02:01.223 DEBUG 12924 --- [http-nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-02-09 04:02:01.618 DEBUG 12924 --- [http-nio-9092-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-02-09 04:02:01.619 DEBUG 12924 --- [http-nio-9092-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-02-09 04:02:01.632 DEBUG 12924 --- [http-nio-9092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
