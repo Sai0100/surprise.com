@@ -2,5 +2,6 @@
  * 
  */
 (function(angular) {
-	angular.module("surprise", [])
-})(angular)
+	'use strict';
+	angular.module('surprise', [ 'ui.router']);
+})(window.angular);
