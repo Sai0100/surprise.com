@@ -1,2 +1,34 @@
-2019-02-13 00:02:38.509  WARN 3472 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h6s764ms521µs414ns).
-2019-02-13 15:59:19.505  WARN 3472 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15h55m28s318ms886µs326ns).
+2019-02-14 16:49:26.811  WARN 3472 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16h20m25s496ms51µs417ns).
+2019-02-14 20:28:29.532  WARN 3472 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h1m46s535ms441µs598ns).
+2019-02-14 21:09:06.295  INFO 13316 --- [main] o.h.s.com.main.test.ApplicationTest      : Starting ApplicationTest on BASHU-PC with PID 13316 (started by BASHU in E:\Tutorials - Sai\Hack-TCS-DevOps\surprise_repo\surprise.com)
+2019-02-14 21:09:06.298  INFO 13316 --- [main] o.h.s.com.main.test.ApplicationTest      : No active profile set, falling back to default profiles: default
+2019-02-14 21:09:07.061 DEBUG 13316 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4659191b
+2019-02-14 21:09:15.755  INFO 13316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-14 21:09:16.394  INFO 13316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 557ms. Found 1 repository interfaces.
+2019-02-14 21:09:19.424  INFO 13316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d983e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-14 21:09:21.353  INFO 13316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-14 21:09:21.382  WARN 13316 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-02-14 21:09:24.401  INFO 13316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-14 21:09:25.173  INFO 13316 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-14 21:09:26.091  INFO 13316 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-14 21:09:26.112  INFO 13316 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-14 21:09:28.503  INFO 13316 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-14 21:09:29.751  INFO 13316 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-02-14 21:09:39.728  INFO 13316 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-14 21:09:42.812 DEBUG 13316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-02-14 21:09:45.149  INFO 13316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-14 21:09:45.186 DEBUG 13316 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-02-14 21:09:45.437  WARN 13316 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-14 21:09:45.555 DEBUG 13316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-02-14 21:09:45.602 DEBUG 13316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-02-14 21:09:45.643 DEBUG 13316 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-02-14 21:09:45.838  INFO 13316 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-02-14 21:09:47.814  INFO 13316 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-14 21:09:47.982  INFO 13316 --- [main] o.h.s.com.main.test.ApplicationTest      : Started ApplicationTest in 46.186 seconds (JVM running for 52.227)
+2019-02-14 21:09:48.396 DEBUG 13316 --- [Thread-7] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4659191b, started on Thu Feb 14 21:09:07 IST 2019
+2019-02-14 21:09:48.401  INFO 13316 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-14 21:09:48.431  INFO 13316 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-14 21:09:48.445  INFO 13316 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-14 21:09:53.007  INFO 13316 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
