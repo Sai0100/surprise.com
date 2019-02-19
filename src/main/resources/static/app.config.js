@@ -11,11 +11,14 @@
 		$stateProvider.state('home', {
 			url : '/home',
 			template : '<div home></div>',
-			
+
 		}).state('helper', {
 			url : '/helper',
 			template : '<div helper></div>',
-			
+
+		}).state('sender', {
+			url : '/sender',
+			template : '<div sender></div>',
 		});
 
 		$urlRouterProvider.otherwise('/home');
