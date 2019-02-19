@@ -10,47 +10,39 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SurpriseManagerImpl implements SurpriseManager {
+public class SurpriseManagerImpl  {
 
 	@Autowired
 	private SurpriseRepo surpriseRepo;
 
-	@Override
 	public List<User> getHelperList() {
 		return null;
 	}
 
-	@Override
 	public List<User> getSenderList() {
 		return null;
 	}
 
-	@Override
 	public boolean addGift() {
 		return false;
 	}
 
-	@Override
 	public List<Request> getGiftRequests() {
 		return null;
 	}
 
-	@Override
 	public List<Journey> getJourneyFrom(String from) {
 		List<Journey> journey = surpriseRepo.findAll();
 		return journey;
 	}
 	
-	@Override
 	public List<Journey> getJourneyTo(String to) {
 		List<Journey> stream = surpriseRepo.findAll();
 		return stream;
 	}
 
-	@Override
 	public boolean addJourneyDetails(Journey journey) {
-		journey = surpriseRepo.save(journey);
-		return journey == null ? false : true;
+		return surpriseRepo.save(journey);
 	}
 
 	public static void main(String[] args) {
