@@ -1,34 +1,50 @@
-2019-02-14 16:49:26.811  WARN 3472 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16h20m25s496ms51µs417ns).
-2019-02-14 20:28:29.532  WARN 3472 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h1m46s535ms441µs598ns).
-2019-02-14 21:09:06.295  INFO 13316 --- [main] o.h.s.com.main.test.ApplicationTest      : Starting ApplicationTest on BASHU-PC with PID 13316 (started by BASHU in E:\Tutorials - Sai\Hack-TCS-DevOps\surprise_repo\surprise.com)
-2019-02-14 21:09:06.298  INFO 13316 --- [main] o.h.s.com.main.test.ApplicationTest      : No active profile set, falling back to default profiles: default
-2019-02-14 21:09:07.061 DEBUG 13316 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4659191b
-2019-02-14 21:09:15.755  INFO 13316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-02-14 21:09:16.394  INFO 13316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 557ms. Found 1 repository interfaces.
-2019-02-14 21:09:19.424  INFO 13316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d983e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-02-14 21:09:21.353  INFO 13316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-02-14 21:09:21.382  WARN 13316 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-02-14 21:09:24.401  INFO 13316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-02-14 21:09:25.173  INFO 13316 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-02-14 21:09:26.091  INFO 13316 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-02-14 21:09:26.112  INFO 13316 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-02-14 21:09:28.503  INFO 13316 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-02-14 21:09:29.751  INFO 13316 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
-2019-02-14 21:09:39.728  INFO 13316 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-02-14 21:09:42.812 DEBUG 13316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2019-02-14 21:09:45.149  INFO 13316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-02-14 21:09:45.186 DEBUG 13316 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-02-14 21:09:45.437  WARN 13316 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-02-14 21:09:45.555 DEBUG 13316 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
-2019-02-14 21:09:45.602 DEBUG 13316 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-02-14 21:09:45.643 DEBUG 13316 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-02-14 21:09:45.838  INFO 13316 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2019-02-14 21:09:47.814  INFO 13316 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-02-14 21:09:47.982  INFO 13316 --- [main] o.h.s.com.main.test.ApplicationTest      : Started ApplicationTest in 46.186 seconds (JVM running for 52.227)
-2019-02-14 21:09:48.396 DEBUG 13316 --- [Thread-7] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4659191b, started on Thu Feb 14 21:09:07 IST 2019
-2019-02-14 21:09:48.401  INFO 13316 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-02-14 21:09:48.431  INFO 13316 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-02-14 21:09:48.445  INFO 13316 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-02-14 21:09:53.007  INFO 13316 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-19 10:12:30.093  INFO 11472 --- [main] org.hack.surprise.com.main.Application   : Starting Application on BASHU-PC with PID 11472 (started by BASHU in E:\Tutorials - Sai\Hack-TCS-DevOps\surprise_repo\surprise.com)
+2019-02-19 10:12:30.236  INFO 11472 --- [main] org.hack.surprise.com.main.Application   : No active profile set, falling back to default profiles: default
+2019-02-19 10:12:36.024  INFO 11472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-02-19 10:12:36.233  INFO 11472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-19 10:12:36.233  INFO 11472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-02-19 10:12:36.264  INFO 11472 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_73\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_77/bin/server;C:/Program Files/Java/jre1.8.0_77/bin;C:/Program Files/Java/jre1.8.0_77/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;E:\Installations\Java\jdk1.7.0_05;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;F:\Node\;C:\Program Files\Java\jdk1.8.0_73\bin;%Program Files%\Git\bin;F:\MVN\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;%Program Files%\Git\cmd;F:\#\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\BASHU\AppData\Roaming\npm;F:\Spring\spring_pack\sts-bundle\sts-3.9.6.RELEASE;;.]
+2019-02-19 10:12:37.400  INFO 11472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-19 10:12:37.401 DEBUG 11472 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-02-19 10:12:37.402  INFO 11472 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6895 ms
+2019-02-19 10:12:39.064  WARN 11472 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'surpriseController': Unsatisfied dependency expressed through field 'surpriseManagerImpl'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'surpriseManagerImpl': Unsatisfied dependency expressed through field 'surpriseRepo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.hack.surprise.com.main.config.SurpriseRepo' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-02-19 10:12:39.073  INFO 11472 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-19 10:12:39.164  INFO 11472 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-19 10:12:39.537 ERROR 11472 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field surpriseRepo in org.hack.surprise.com.main.service.SurpriseManagerImpl required a bean of type 'org.hack.surprise.com.main.config.SurpriseRepo' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.hack.surprise.com.main.config.SurpriseRepo' in your configuration.
+
+2019-02-19 10:24:04.942  INFO 5756 --- [main] org.hack.surprise.com.main.Application   : Starting Application on BASHU-PC with PID 5756 (started by BASHU in E:\Tutorials - Sai\Hack-TCS-DevOps\surprise_repo\surprise.com)
+2019-02-19 10:24:04.949  INFO 5756 --- [main] org.hack.surprise.com.main.Application   : No active profile set, falling back to default profiles: default
+2019-02-19 10:24:08.214  INFO 5756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9092 (http)
+2019-02-19 10:24:08.264  INFO 5756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-19 10:24:08.264  INFO 5756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-02-19 10:24:08.279  INFO 5756 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_73\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_77/bin/server;C:/Program Files/Java/jre1.8.0_77/bin;C:/Program Files/Java/jre1.8.0_77/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;E:\Installations\Java\jdk1.7.0_05;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;F:\Node\;C:\Program Files\Java\jdk1.8.0_73\bin;%Program Files%\Git\bin;F:\MVN\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;%Program Files%\Git\cmd;F:\#\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\BASHU\AppData\Roaming\npm;F:\Spring\spring_pack\sts-bundle\sts-3.9.6.RELEASE;;.]
+2019-02-19 10:24:08.423  INFO 5756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-19 10:24:08.423 DEBUG 5756 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-02-19 10:24:08.424  INFO 5756 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3363 ms
+2019-02-19 10:24:09.272 DEBUG 5756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-02-19 10:24:09.536  INFO 5756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-19 10:24:09.551 DEBUG 5756 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-02-19 10:24:09.631 DEBUG 5756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-02-19 10:24:09.650 DEBUG 5756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-02-19 10:24:09.672 DEBUG 5756 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-02-19 10:24:09.705  INFO 5756 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-02-19 10:24:10.025  INFO 5756 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-
