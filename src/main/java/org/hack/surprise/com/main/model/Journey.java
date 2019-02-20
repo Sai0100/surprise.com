@@ -20,37 +20,25 @@ public class Journey implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	public Journey() {
-
-	}
-
-	public Journey(String fromJ, String toJ) {
-		this.fromJ = fromJ;
-		this.toJ = toJ;
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int journeyId;
 	private String fromJ;
 	private String toJ;
 	private double kms;
-	private String vehicleNum;
-	private String seatNum;
+	private String busNum;
+	private String seatNo;
 	private String estTime;
 	private int userId;
-	private int travelType;
-	private User user;
 
-	
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date journeyDate = new Date();
+	private Date journeyDate;
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((vehicleNum == null) ? 0 : vehicleNum.hashCode());
+		result = prime * result + ((busNum == null) ? 0 : busNum.hashCode());
 		result = prime * result + ((estTime == null) ? 0 : estTime.hashCode());
 		result = prime * result + ((fromJ == null) ? 0 : fromJ.hashCode());
 		result = prime * result + ((journeyDate == null) ? 0 : journeyDate.hashCode());
@@ -58,7 +46,7 @@ public class Journey implements Serializable {
 		long temp;
 		temp = Double.doubleToLongBits(kms);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result + ((seatNum == null) ? 0 : seatNum.hashCode());
+		result = prime * result + ((seatNo == null) ? 0 : seatNo.hashCode());
 		result = prime * result + ((toJ == null) ? 0 : toJ.hashCode());
 		result = prime * result + userId;
 		return result;
@@ -73,10 +61,10 @@ public class Journey implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Journey other = (Journey) obj;
-		if (vehicleNum == null) {
-			if (other.vehicleNum != null)
+		if (busNum == null) {
+			if (other.busNum != null)
 				return false;
-		} else if (!vehicleNum.equals(other.vehicleNum))
+		} else if (!busNum.equals(other.busNum))
 			return false;
 		if (estTime == null) {
 			if (other.estTime != null)
@@ -97,10 +85,10 @@ public class Journey implements Serializable {
 			return false;
 		if (Double.doubleToLongBits(kms) != Double.doubleToLongBits(other.kms))
 			return false;
-		if (seatNum == null) {
-			if (other.seatNum != null)
+		if (seatNo == null) {
+			if (other.seatNo != null)
 				return false;
-		} else if (!seatNum.equals(other.seatNum))
+		} else if (!seatNo.equals(other.seatNo))
 			return false;
 		if (toJ == null) {
 			if (other.toJ != null)
@@ -115,16 +103,8 @@ public class Journey implements Serializable {
 	@Override
 	public String toString() {
 		return "Journey [journeyId=" + journeyId + ", from=" + fromJ + ", to=" + toJ + ", kms=" + kms + ", busNum="
-				+ vehicleNum + ", seatNo=" + seatNum + ", estTime=" + estTime + ", userId=" + userId + ", journeyDate="
+				+ busNum + ", seatNo=" + seatNo + ", estTime=" + estTime + ", userId=" + userId + ", journeyDate="
 				+ journeyDate + "]";
-	}
-
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
 	}
 
 	public int getJourneyId() {
@@ -159,20 +139,20 @@ public class Journey implements Serializable {
 		this.kms = kms;
 	}
 
-	public String getVehicleNum() {
-		return vehicleNum;
+	public String getBusNum() {
+		return busNum;
 	}
 
-	public void setVehicleNum(String vehicleNum) {
-		this.vehicleNum = vehicleNum;
+	public void setBusNum(String busNum) {
+		this.busNum = busNum;
 	}
 
-	public String getSeatNum() {
-		return seatNum;
+	public String getSeatNo() {
+		return seatNo;
 	}
 
-	public void setSeatNum(String seatNum) {
-		this.seatNum = seatNum;
+	public void setSeatNo(String seatNo) {
+		this.seatNo = seatNo;
 	}
 
 	public String getEstTime() {
@@ -203,11 +183,4 @@ public class Journey implements Serializable {
 		return serialVersionUID;
 	}
 
-	public int getTravelType() {
-		return travelType;
-	}
-
-	public void setTravelType(int travelType) {
-		this.travelType = travelType;
-	}
 }

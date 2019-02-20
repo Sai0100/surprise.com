@@ -37,16 +37,4 @@
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/main/resources/static/images/heyparcel.PNG</name>
-			<type>1</type>
-			<location>C:/Users/BASHU/Desktop/heyparcel.PNG</location>
-		</link>
-		<link>
-			<name>src/main/resources/static/images/image.PNG</name>
-			<type>1</type>
-			<location>C:/Users/BASHU/Desktop/image.PNG</location>
-		</link>
-	</linkedResources>
 </projectDescription>
