@@ -2,7 +2,7 @@
 	'use strict';
 	angular.module('surprise').directive('home', home);
 	home.$inject = [ '$location', 'cons', '$cookies' ];
-	function home($location, cons, $cookies) {
+	function home($location, cons, $cookies ) {
 		return {
 			templateUrl : 'app/home/home.html',
 			link : function(scope, element, attr) {
@@ -16,6 +16,8 @@
 					$cookies.put("to", to);
 					$location.path('/sender');
 				}
+
+				
 			}
 		}
 	}
