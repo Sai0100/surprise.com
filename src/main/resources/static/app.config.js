@@ -21,6 +21,6 @@
 			template : '<div sender></div>',
 		});
 
-		$urlRouterProvider.otherwise('/home');
+		$urlRouterProvider.otherwise('/helper');
 	}
 })(window.angular);
