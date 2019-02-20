@@ -59,16 +59,14 @@
 
 	<build>
 		
-	 <plugin>	
-      		<plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>4.0.0</version>
-        <configuration>
-          <configLocation>checkstyle.xml</configLocation>
-        </configuration>
-      </plugin>
-    </plugins>
-	</build>
+	<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			
+		
+        		</plugin>
+		</plugins>
+		<plugins>
 
 </project>
