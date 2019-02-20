@@ -21,6 +21,15 @@ public class User implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public User(String name) {
+		// TODO Auto-generated constructor stub
+		this.name = name;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -131,14 +140,13 @@ public class User implements Serializable {
 			return false;
 		return true;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", lname=" + lname + ", fname=" + fname + ", createdDate="
 				+ createdDate + ", updateDate=" + updateDate + ", dob=" + dob + ", email=" + email + ", gender="
 				+ gender + ", mobile=" + mobile + ", address=" + address + ", active=" + active + "]";
 	}
-
 
 	public int getId() {
 		return id;
@@ -240,5 +248,4 @@ public class User implements Serializable {
 		return serialVersionUID;
 	}
 
-	
 }

@@ -1,30 +1,26 @@
 package org.hack.surprise.com.main.config;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.hack.surprise.com.main.model.Journey;
+import org.hack.surprise.com.main.util.DataInit;
 import org.springframework.stereotype.Component;
 
 @Component
 public class SurpriseRepo {
 
-	private static ArrayList<Journey> list = new ArrayList<>();
-	
-	static {
-		Journey journey = new Journey();
-		list.add(journey);
-	}
+	private DataInit init = new DataInit();
 
 	public List<Journey> findAll() {
-		return list;
+		return init.getJourneyData();
 	}
 
 	public boolean save(Journey journey) {
-		return list.add(journey);
+		return init.add(journey);
 	}
-	
-	
-	
-}
 
+	public List<Journey> getTravellers(String from, String to) {
+		return init.getTravellers(from, to);
+	}
+
+}

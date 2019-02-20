@@ -22,8 +22,9 @@ public class SurpriseController implements SurpriseManager {
 	private SurpriseManagerImpl surpriseManagerImpl;
 
 	@Override
-	public List<User> getHelperList() {
-		return null;
+	@RequestMapping(value = "getHelperList/{from}/{to}", method = RequestMethod.GET)
+	public List<Journey> getHelperList(@PathVariable("from") String from, @PathVariable("to") String to) {
+		return surpriseManagerImpl.getTravellers(from, to);
 	}
 
 	@Override

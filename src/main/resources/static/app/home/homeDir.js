@@ -1,22 +1,21 @@
 (function(angular) {
 	'use strict';
 	angular.module('surprise').directive('home', home);
-	home.$inject = [ '$location' ];
-	function home($location) {
+	home.$inject = [ '$location', 'cons', '$cookies' ];
+	function home($location, cons, $cookies) {
 		return {
 			templateUrl : 'app/home/home.html',
-			controller : function($scope) {
-				$scope.data = [ '23123', '23123', '2345677' ];
-				$scope.gotoHelper = function() {
+			link : function(scope, element, attr) {
+				scope.gotoHelper = function(from, to) {
+					$cookies.put("from", from);
+					$cookies.put("to", to);
 					$location.path('/helper');
 				}
-				$scope.gotoSender = function() {
+				scope.gotoSender = function(from, to) {
+					$cookies.put("from", from);
+					$cookies.put("to", to);
 					$location.path('/sender');
 				}
-
-			},
-			link : function(scope, element, attr) {
-
 			}
 		}
 	}

@@ -30,6 +30,10 @@ public class SurpriseManagerImpl  {
 	public List<Request> getGiftRequests() {
 		return null;
 	}
+	
+	public List<Journey> getTravellers(String from,String to) {
+		return surpriseRepo.getTravellers(from, to); 
+	}
 
 	public List<Journey> getJourneyFrom(String from) {
 		List<Journey> journey = surpriseRepo.findAll();

@@ -1,15 +1,15 @@
 (function(angular) {
 	'use strict';
 	angular.module('surprise').directive('autoComplete', autoComplete);
-	autoComplete.$inject = [ '$filter', '$http' ];
-	function autoComplete($filter, $http) {
+	autoComplete.$inject = [ '$filter', '$http' ,'cons'];
+	function autoComplete($filter, $http,cons) {
 		return {
 			restrict : 'A',
-			template : "<div><button></button></div>",
 			controller : function($scope) {
 				// var vm = this;
 				// vm.client ={COMPANY_ID:'', COMPANY_DESC:''};
 				$scope.dataSource = [];
+				//$scope.dataSource = cons.journey;
 
 				$http.get("http://localhost:9092/surprise/getFrom/Hyd").then(
 						function(success) {

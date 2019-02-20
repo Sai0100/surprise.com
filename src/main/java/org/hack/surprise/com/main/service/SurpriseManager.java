@@ -8,7 +8,7 @@ import org.hack.surprise.com.main.model.User;
 
 public interface SurpriseManager {
 
-	List<User> getHelperList();
+	List<Journey> getHelperList(String from,String to);
 
 	List<User> getSenderList();
 

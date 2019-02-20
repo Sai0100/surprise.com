@@ -20,6 +20,15 @@ public class Journey implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	public Journey() {
+
+	}
+
+	public Journey(String fromJ, String toJ) {
+		this.fromJ = fromJ;
+		this.toJ = toJ;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int journeyId;
@@ -31,7 +40,9 @@ public class Journey implements Serializable {
 	private String estTime;
 	private int userId;
 	private int travelType;
+	private User user;
 
+	
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date journeyDate = new Date();
 
@@ -106,6 +117,14 @@ public class Journey implements Serializable {
 		return "Journey [journeyId=" + journeyId + ", from=" + fromJ + ", to=" + toJ + ", kms=" + kms + ", busNum="
 				+ vehicleNum + ", seatNo=" + seatNum + ", estTime=" + estTime + ", userId=" + userId + ", journeyDate="
 				+ journeyDate + "]";
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	public int getJourneyId() {
