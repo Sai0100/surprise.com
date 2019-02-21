@@ -13,13 +13,13 @@
 			</div>
 		</nav>
 		<div align="center" class="form-inline">
-			<input class="form form-control input-md" auto-complete=""
-				placeholder="From" ui-items="dataSource" ng-model="from" /> <input
+			<input id="from" class="form form-control input-md" auto-complete=""
+				placeholder="From" ui-items="dataSource" ng-model="from" /> <input id="to"
 				class="form form-control input-md" auto-complete="" placeholder="To"
 				ui-items="dataSource" ng-model="to">
-			<button class="btn btn-warning btn-md" ng-click="gotoHelper(from,to)">Need
+			<button id="need_id" ng-disabled="!from || !to" class="btn btn-warning btn-md" ng-click="gotoHelper(from,to)">Need
 				Help ?</button>
-			<button class="btn btn-warning btn-md" ng-click="gotoSender(from,to)">Wanna
+			<button id="wanna_id" ng-disabled="!from || !to" class="btn btn-warning btn-md" ng-click="gotoSender(from,to)">Wanna
 				Help.. :)</button>
 		</div>
 	</div>

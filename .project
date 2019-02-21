@@ -39,11 +39,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>src/main/resources/static/images/heyparcel.PNG</name>
-			<type>1</type>
-			<location>C:/Users/BASHU/Desktop/heyparcel.PNG</location>
-		</link>
-		<link>
 			<name>src/main/resources/static/images/image.PNG</name>
 			<type>1</type>
 			<location>C:/Users/BASHU/Desktop/image.PNG</location>

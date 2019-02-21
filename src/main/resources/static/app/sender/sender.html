@@ -20,12 +20,12 @@
 					<tr>
 						<td></td>
 						<td>Form:&nbsp;&nbsp;&nbsp;</td>
-						<td>{{jurny.from}}</td>
+						<td id="from">{{jurny.from}}</td>
 					</tr>
 					<tr>
 						<td></td>
 						<td>To:</td>
-						<td>{{jurny.to}}</td>
+						<td id="to">{{jurny.to}}</td>
 					</tr>
 				</table>
 			</div>
@@ -69,7 +69,7 @@
 						</h6>
 					</div>
 					<div style="margin-top: 20px;" align="center">
-						<button ng-click="det.status = true" ng-show="det.status == false" class="btn btn-warning btn-sm">Accept
+						<button id="accept" ng-click="det.status = true" ng-show="det.status == false" class="btn btn-warning btn-sm">Accept
 							Request</button>
 						<button ng-disabled="true" ng-show="det.status == true" class="btn btn-success btn-sm">Accepted
 							Request</button>
