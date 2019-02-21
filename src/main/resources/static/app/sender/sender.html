@@ -1,4 +1,4 @@
-<div>
+<div ng-init="getGiftList()">
 	<div class="header-blue">
 		<nav class="navbar navbar-default navigation-clean-search">
 			<div class="container">
@@ -13,55 +13,68 @@
 				<p class="navbar-text">
 					<br>
 				<div class="form-inline">
-					<h4>
-						Would like to send Gift/Parcel ? &nbsp;&nbsp;&nbsp; Date: &nbsp;<input
-							class="form form-control input-md" value="12/20/2019" type="text">
-					</h4>
+					<h4>Would like to help others by carrying a Gift/Parcel ?
+						&nbsp;&nbsp;&nbsp;</h4>
 				</div>
 				<table style="margin-left: 35px;">
 					<tr>
 						<td></td>
 						<td>Form:&nbsp;&nbsp;&nbsp;</td>
-						<td>Hyderabad</td>
+						<td>{{jurny.from}}</td>
 					</tr>
 					<tr>
 						<td></td>
 						<td>To:</td>
-						<td>Karimnagar</td>
+						<td>{{jurny.to}}</td>
 					</tr>
 				</table>
 			</div>
 		</nav>
 	</div>
 	<div style="margin: 40px;">
-		<table>
-			<tr>
-				<td>Sender Name:</td>
-				<td><input class="form form-control input-md"
-					value="12/20/2019" type="text"></td>
+		<div style="margin: 40px;">
+			<div style="padding: 19px;" ng-repeat="det in gifts"
+				class="w3-card-4">
+				<div class="w3-container">
+					<div class="col-md-6">
+						<table>
+							<tr>
+								<td><img style="height: 40px; width: 40px;" alt=""
+									src="images/gift.png"></td>
+								<td><h4>&nbsp;&nbsp;{{det.user.name}}</h4>&nbsp;&nbsp;Mobile:
+									+91-9880082862</td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+								<td><h6 style="font-size: 14px;">
+										Parcel Size: {{$index +10 -4}} x {{$index +1}} <br>
+										<br>Amount: {{$index+127}}.00RS
+									</h6></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><h6>&nbsp;&nbsp;{{det.delToComment}} NO -
+										{{$index+1}}</h6></td>
+							</tr>
+						</table>
 
-			</tr>
-			<tr>
-				<td>Sender Mobile:</td>
-				<td><input class="form form-control input-md"
-					value="12/20/2019" type="text"></td>
-			</tr>
-			<tr>
-				<td>Sender ID:</td>
-				<td><input class="form form-control input-md"
-					value="12/20/2019" type="text"></td>
-			</tr>
-			<tr>
-				<td>Meeting Place:</td>
-				<td><input class="form form-control input-md"
-					value="12/20/2019" type="text"></td>
-			</tr>
-			<tr>
-				<td>Notes/Comments:</td>
-				<td><input class="form form-control input-md"
-					value="12/20/2019" type="text"></td>
-			</tr>
-
-		</table>
+					</div>
+					<div class="col-md-4">
+						<h6>
+							<img style="height: 20px; width: 20px;" alt=""
+								src="images/markerstart.png">&nbsp;Delivery Address:<br>
+							<span style="margin-top: 10px; font-size: 12px;">
+								&nbsp;&nbsp;{{det.delToName}} , Road No - {{$index+1}}, Behind
+								Building No - {{$index}}<br> &nbsp;&nbsp;Pincode :
+								50000{{$index+3}}, {{jurny.to}}, Andhra Pradesh.
+							</span>
+						</h6>
+					</div>
+					<div style="margin-top: 20px;" align="center">
+						<button ng-click="det.status = true" ng-show="det.status == false" class="btn btn-warning btn-sm">Accept
+							Request</button>
+						<button ng-disabled="true" ng-show="det.status == true" class="btn btn-success btn-sm">Accepted
+							Request</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>

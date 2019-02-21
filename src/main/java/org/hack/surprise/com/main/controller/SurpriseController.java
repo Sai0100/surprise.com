@@ -38,8 +38,9 @@ public class SurpriseController implements SurpriseManager {
 	}
 
 	@Override
-	public List<Request> getGiftRequests() {
-		return null;
+	@RequestMapping(value = "getGiftList", method = RequestMethod.GET)
+		public List<Request> getGiftRequests() {
+		return surpriseManagerImpl.getGiftRequests();
 	}
 
 	@Override

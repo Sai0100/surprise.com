@@ -3,6 +3,7 @@ package org.hack.surprise.com.main.config;
 import java.util.List;
 
 import org.hack.surprise.com.main.model.Journey;
+import org.hack.surprise.com.main.model.Request;
 import org.hack.surprise.com.main.util.DataInit;
 import org.springframework.stereotype.Component;
 
@@ -21,6 +22,10 @@ public class SurpriseRepo {
 
 	public List<Journey> getTravellers(String from, String to) {
 		return init.getTravellers(from, to);
+	}
+
+	public List<Request> getGiftRequests() {
+		return init.getGiftRequests();
 	}
 
 }

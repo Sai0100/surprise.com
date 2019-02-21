@@ -28,7 +28,7 @@ public class SurpriseManagerImpl  {
 	}
 
 	public List<Request> getGiftRequests() {
-		return null;
+		return surpriseRepo.getGiftRequests();
 	}
 	
 	public List<Journey> getTravellers(String from,String to) {

@@ -19,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Request implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int reqId;
@@ -30,10 +30,28 @@ public class Request implements Serializable {
 	private String delToPhone;
 	private String delToDesc;
 	private String delToComment;
-	
+	private User user;
+	private boolean status;
+
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+
+	public boolean isStatus() {
+		return status;
+	}
+
+	public Request() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Request(String itemDesc) {
+		this.itemDesc = itemDesc;
+	}
+
 	@Temporal(TemporalType.DATE)
 	private Date delDate;
-	
+
 	@Temporal(TemporalType.TIME)
 	private Date estTime;
 
@@ -120,6 +138,14 @@ public class Request implements Serializable {
 				+ ", delToComment=" + delToComment + ", delDate=" + delDate + ", estTime=" + estTime + "]";
 	}
 
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
 	public int getReqId() {
 		return reqId;
 	}
@@ -203,6 +229,5 @@ public class Request implements Serializable {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	
-	
+
 }

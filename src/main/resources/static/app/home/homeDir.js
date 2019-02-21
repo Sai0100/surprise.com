@@ -16,7 +16,6 @@
 					$cookies.put("to", to);
 					$location.path('/sender');
 				}
-
 				
 			}
 		}
