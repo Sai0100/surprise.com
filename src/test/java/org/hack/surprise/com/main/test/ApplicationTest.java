@@ -21,6 +21,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ApplicationTest {
 
+	//A&e5Wxs7NpI8dvRkGlOeTcMI-mVt?54B
 	private static WebDriver driver;
 
 	@BeforeClass
