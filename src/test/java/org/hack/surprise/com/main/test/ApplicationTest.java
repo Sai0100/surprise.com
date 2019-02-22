@@ -28,16 +28,16 @@ public class ApplicationTest {
 	public static void initData() {
 		System.setProperty("webdriver.chrome.driver", "D:\\Users\\Akhil\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://localhost:9092/#!/home");
+		driver.get("http://localhost:9093/#!/home");
 	}
 
 	@Test
 	public void ad_needHelp() throws InterruptedException { 
-		WebElement From = driver.findElement(By.xpath("//input[@id = 'from']"));
+		WebElement From = driver.findElement(By.xpath(".//*[@id = 'from']"));
 		From.sendKeys("Pocharam");
-		WebElement To = driver.findElement(By.xpath("//input[@id = 'to']"));
+		WebElement To = driver.findElement(By.xpath(".//*[@id = 'to']"));
 		To.sendKeys("Hyderabad");
-		WebElement WannaHelp = driver.findElement(By.xpath("//button[@id = 'need_id']"));
+		WebElement WannaHelp = driver.findElement(By.xpath(".//*[@id = 'need_id']"));
 		WannaHelp.click();
 		Thread.sleep(3000); 
 	}
@@ -59,11 +59,11 @@ public class ApplicationTest {
 
 	@Test
 	public void aa_wannaHelp() {
-		WebElement From = driver.findElement(By.xpath("//input[@id = 'from']"));
+		WebElement From = driver.findElement(By.xpath(".//*[@id = 'from']"));
 		From.sendKeys("Pocharam");
-		WebElement To = driver.findElement(By.xpath("//input[@id = 'to']"));
+		WebElement To = driver.findElement(By.xpath(".//*[@id = 'to']"));
 		To.sendKeys("Hyderabad");
-		WebElement WannaHelp = driver.findElement(By.xpath("//button[@id = 'wanna_id']"));
+		WebElement WannaHelp = driver.findElement(By.xpath(".//*[@id = 'wanna_id']"));
 		WannaHelp.click();
 	}
 

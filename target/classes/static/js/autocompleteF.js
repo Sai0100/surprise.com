@@ -11,7 +11,7 @@
 				// vm.client ={COMPANY_ID:'', COMPANY_DESC:''};
 				$scope.dataSource = cons.journey;
 				
-				/*$http.get("http://localhost:9092/surprise/getFrom/Hyd").then(
+				/*$http.get("http://localhost:9093/surprise/getFrom/Hyd").then(
 						function(success) {
 							$scope.dataSource = success.data;
 						}, function(fail) {
