@@ -29,6 +29,7 @@ public class ApplicationSeleniumTest {
 		driver.get("http://localhost:9093/#!/home");
 	}
 	//changed only port: 9092 to 9093
+	//selenium test
 
 	@Test
 	public void ad_needHelp() throws InterruptedException { 
