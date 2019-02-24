@@ -1,7 +1,5 @@
 package org.hack.surprise.com.main.test;
 
-import static org.junit.Assert.assertEquals;
-
 import org.hack.surprise.com.main.Application;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -19,7 +17,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ApplicationTest {
+public class ApplicationSeleniumTest {
 
 	//A&e5Wxs7NpI8dvRkGlOeTcMI-mVt?54B
 	private static WebDriver driver;
@@ -37,6 +35,7 @@ public class ApplicationTest {
 		From.sendKeys("Pocharam");
 		WebElement To = driver.findElement(By.xpath("//input[@id = 'to']"));
 		To.sendKeys("Hyderabad");
+		Thread.sleep(2000);
 		WebElement WannaHelp = driver.findElement(By.xpath("//button[@id = 'need_id']"));
 		WannaHelp.click();
 		Thread.sleep(3000); 
@@ -58,11 +57,12 @@ public class ApplicationTest {
 	}
 
 	@Test
-	public void aa_wannaHelp() {
+	public void aa_wannaHelp() throws InterruptedException {
 		WebElement From = driver.findElement(By.xpath("//input[@id = 'from']"));
 		From.sendKeys("Pocharam");
 		WebElement To = driver.findElement(By.xpath("//input[@id = 'to']"));
 		To.sendKeys("Hyderabad");
+		Thread.sleep(2000);
 		WebElement WannaHelp = driver.findElement(By.xpath("//button[@id = 'wanna_id']"));
 		WannaHelp.click();
 	}
