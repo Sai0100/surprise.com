@@ -13,6 +13,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.testng.annotations.*;
+import org.junit.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
