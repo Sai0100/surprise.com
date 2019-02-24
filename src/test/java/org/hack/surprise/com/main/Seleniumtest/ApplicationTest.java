@@ -19,38 +19,57 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ApplicationTest {
+public class ApplicationJunitTest {
 
 	//A&e5Wxs7NpI8dvRkGlOeTcMI-mVt?54B
+	private static WebDriver driver;
 
 	@BeforeClass
 	public static void initData() {
-		System.out.println("Init");
+		System.setProperty("webdriver.chrome.driver", "D:\\Users\\Akhil\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("http://localhost:9093/#!/home");
 	}
 
 	@Test
 	public void ad_needHelp() throws InterruptedException { 
-		System.out.println("NeedHelp");
+		WebElement From = driver.findElement(By.xpath(".//*[@id = 'from']"));
+		From.sendKeys("Pocharam");
+		WebElement To = driver.findElement(By.xpath(".//*[@id = 'to']"));
+		To.sendKeys("Hyderabad");
+		WebElement WannaHelp = driver.findElement(By.xpath(".//*[@id = 'need_id']"));
+		WannaHelp.click();
+		Thread.sleep(3000); 
 	}
 	
 	@Test
 	public void ac_back() throws InterruptedException {
-		System.out.println("Back");
+		driver.navigate().back();
+		Thread.sleep(3000); 
 	}
 
 	
 	@Test
 	public void ab_addFromTo() throws InterruptedException {
-		System.out.println("AddFromTo");
+		Thread.sleep(3000); 
+		WebElement WannaHelp = driver.findElement(By.xpath(".//*[@id = 'accept']"));
+		WannaHelp.click();
+		Thread.sleep(3000); 
 	}
 
 	@Test
 	public void aa_wannaHelp() {
-		System.out.println("Wanna help");
+		WebElement From = driver.findElement(By.xpath(".//*[@id = 'from']"));
+		From.sendKeys("Pocharam");
+		WebElement To = driver.findElement(By.xpath(".//*[@id = 'to']"));
+		To.sendKeys("Hyderabad");
+		WebElement WannaHelp = driver.findElement(By.xpath(".//*[@id = 'wanna_id']"));
+		WannaHelp.click();
 	}
 
 	@AfterClass
 	public static void terminateTests() {
-		System.out.println("Exit");
+		System.out.println("Terminate");
+		driver.quit();
 	}
 }
