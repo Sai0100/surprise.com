@@ -16,7 +16,7 @@
 				}
 				$scope.getHelperList = function() {
 					$http.get(
-							"http://localhost:9092/surprise/getHelperList/"
+							"http://localhost:9093/surprise/getHelperList/"
 									+ $cookies.get("from") + "/"
 									+ $cookies.get("to")).then(
 							function(success) {
