@@ -16,7 +16,7 @@
 				}
 
 				$scope.getGiftList = function() {
-					$http.get("http://localhost:9092/surprise/getGiftList")
+					$http.get("http://localhost:9094/surprise/getGiftList")
 							.then(function(success) {
 								$scope.gifts = success.data;
 							}, function(fail) {
