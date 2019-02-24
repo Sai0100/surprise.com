@@ -28,6 +28,7 @@ public class ApplicationSeleniumTest {
 		driver = new ChromeDriver();
 		driver.get("http://localhost:9093/#!/home");
 	}
+	//changed only port: 9092 to 9093
 
 	@Test
 	public void ad_needHelp() throws InterruptedException { 
