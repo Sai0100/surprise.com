@@ -798,3 +798,17 @@ Verify the connector's configuration, identify and stop any process that's liste
 2019-02-24 19:03:16.786 DEBUG 2288 --- [http-nio-9092-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2019-02-24 19:03:20.629 DEBUG 7708 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@101639ae, started on Sun Feb 24 19:02:55 IST 2019
 2019-02-24 19:03:20.635  INFO 7708 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-24 19:08:34.351  INFO 6240 --- [main] o.h.s.com.main.test.ApplicationTest      : Starting ApplicationTest on BASHU-PC with PID 6240 (started by BASHU in E:\Tutorials - Sai\Hack-TCS-DevOps\surprise_repo\surprise.com)
+2019-02-24 19:08:34.353  INFO 6240 --- [main] o.h.s.com.main.test.ApplicationTest      : No active profile set, falling back to default profiles: default
+2019-02-24 19:08:34.414 DEBUG 6240 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@209da20d
+2019-02-24 19:08:37.519 DEBUG 6240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-02-24 19:08:38.227  INFO 6240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-24 19:08:38.271 DEBUG 6240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-02-24 19:08:38.687 DEBUG 6240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2019-02-24 19:08:38.731 DEBUG 6240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-02-24 19:08:38.758 DEBUG 6240 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-02-24 19:08:38.824  INFO 6240 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-02-24 19:08:39.796  INFO 6240 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-02-24 19:08:39.944  INFO 6240 --- [main] o.h.s.com.main.test.ApplicationTest      : Started ApplicationTest in 6.61 seconds (JVM running for 8.767)
+2019-02-24 19:08:40.461 DEBUG 6240 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@209da20d, started on Sun Feb 24 19:08:34 IST 2019
+2019-02-24 19:08:40.467  INFO 6240 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
