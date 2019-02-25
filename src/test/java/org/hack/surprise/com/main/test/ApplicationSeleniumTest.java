@@ -26,7 +26,7 @@ public class ApplicationSeleniumTest {
 	public static void initData() {
 		System.setProperty("webdriver.chrome.driver", "E:\\Sai\\ChromeDriver\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://localhost:9094/#!/home");
+		driver.get("http://localhost:9093/#!/home");
 	}
 
 	@Test
